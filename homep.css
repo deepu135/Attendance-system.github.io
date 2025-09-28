@@ -17,11 +17,7 @@ body {
     min-height: 100vh;
     text-align: center;
     
- /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/bghomepage.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;*/
+
 }
 
 .container {
@@ -64,11 +60,11 @@ h1 {
 }
 
 .teacher-btn {
-    background-color: royalblue;
+    background-color: rgb(194, 149, 3);
 }
 
 .student-btn {
-    background-color: royalblue;
+    background-color: rgb(194, 149, 3);
 }
 
 .animated-btn:hover {
@@ -90,5 +86,6 @@ h1 {
         justify-content: center;
     }
 }
+
 
 
