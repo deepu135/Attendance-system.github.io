@@ -64,11 +64,11 @@ h1 {
 }
 
 .teacher-btn {
-    background-color: var(--royalblue);
+    background-color: royalblue
 }
 
 .student-btn {
-    background-color: var(--royalblue);
+    background-color: royalblue;
 }
 
 .animated-btn:hover {
