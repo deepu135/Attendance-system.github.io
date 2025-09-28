@@ -1,0 +1,19 @@
+{
+  "name": "att-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "homep.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "mongoose": "^8.18.2"
+  }
+}

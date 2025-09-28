@@ -1,0 +1,92 @@
+/* General Styling */
+:root {
+    --pink-light: #FFC0CB;
+    --pink-dark: #FF69B4;
+    --text-color: #333;
+    --bg-color: #fce4ec;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/bghomepage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: rgb(6, 114, 222);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 50px rgb(18, 1, 103);
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 50px;
+}
+
+/* Buttons and Animations */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.animated-btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(102, 189, 255, 0.1);
+}
+
+.teacher-btn {
+    background-color: var(--royalblue);
+}
+
+.student-btn {
+    background-color: var(--royalblue);
+}
+
+.animated-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 254, 254, 0.855);
+    background-color: #7b7901; /* Lighter pink on hover */
+}
+
+/* Optional: Press down effect */
+.animated-btn:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 254, 254, 0.846);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .buttons-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

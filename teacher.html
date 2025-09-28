@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Panel</title>
+    <link rel="stylesheet" href="teacher.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Teacher Panel</h1>
+        </header>
+
+        <section class="panel-section generate-code-section">
+            <h2>Generate Attendance Code</h2>
+            <form id="attendance-form">
+                <div class="input-group">
+                    <label for="class">Class:</label>
+                    <input type="text" id="class" name="class" required>
+                </div>
+                <div class="input-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <button type="button" id="generate-code-btn" class="animated-btn">Generate Code</button>
+            </form>
+
+            <div id="code-section" class="code-display" style="display: none;">
+                <p>Generated Code:</p>
+                <span id="display-code"></span>
+                <p>Time remaining: <span id="timer"></span></p>
+            </div>
+        </section>
+
+        <section class="panel-section download-section">
+            <h2>Download Attendance Report</h2>
+            <form id="download-form">
+                <div class="input-group">
+                    <label for="download-class">Class:</label>
+                    <input type="text" id="download-class" name="class" required>
+                </div>
+                <div class="input-group">
+                    <label for="download-subject">Subject:</label>
+                    <input type="text" id="download-subject" name="subject" required>
+                </div>
+                <div class="input-group">
+                    <label for="download-date">Date:</label>
+                    <input type="date" id="download-date" name="date" required>
+                </div>
+                <button type="submit" id="download-btn" class="animated-btn">Download Excel</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="teacher.js"></script>
+</body>
+</html>
+ <br>
+ <br>
